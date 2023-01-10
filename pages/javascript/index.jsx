@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Image from 'next/image'
+import style from '../../styles/Home.module.css'
 
 const Javascript = ({ items }) => {
   return (
     <div>
       <Navbar />
-      <div style={{ display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"5px"}}>
+      <div className={style.main}>
         {items.map((item) => (
           <div key={item.id}>
             <div style={{ border: "1px solid black", padding: "1rem" }}>
